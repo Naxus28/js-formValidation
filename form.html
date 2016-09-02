@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Landing Page Form</title>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div class="form">
+			<div class="textintro">
+	      <h1 id="page_title">Landing Page Form</h1>
+	      <p>Complete all fields below to enable the submit button</p>
+	    </div>
+			<!-- start form -->
+			<form id="landing_page_form" class="user_form" action="#" name="landing_page_form" method="POST">
+				<fieldset>
+					<div>
+						<input id="firstname" class="user_name form_element form_input" type="text" name="firstname" placeholder="First Name" autocomplete="off" required />
+			      <p id="firstname_validation_error" class="inactive validation_feedback">
+			      	Valid characters are A-Z a-z , . - and spaces.
+			      </p>
+					</div>
+					<div>
+						<input id="lastname" class="user_name form_element form_input" type="text" name="lastname" placeholder="Last Name" autocomplete="off" required />
+						<p id="lastname_validation_error" class="inactive validation_feedback">
+							Valid characters are A-Z a-z , . - and spaces.
+						</p>
+					</div>
+					<div>
+						<input id="email" class="form_element form_input" type="email" name="email" placeholder="E-mail (i.e. example@domain.com)" autocomplete="off" required />
+					</div>
+					<div>
+						<select id="select_program" class="select_program select form_element" name="select_program" required>
+							<option value="" disabled selected >Select Program</option>
+						  <option value="DC00001">Discrete Structures (Full)</option> 
+						  <option value="DC00002">Discrete Structures (Trial)</option>
+						  <option value="DC00003">Discrete Structures for Teachers (Full)</option>
+						  <option value="DC00004">Discrete Structures for Teachers (Trial)</option>
+						</select>
+					</div>
+		      <input id="submit_button" type="submit" name="submit" value="Submit" disabled>
+			  </fieldset>
+			</form>
+			<!-- end form -->
+		</div>
+		<script src="js/form_validation.js"></script>
+	</body>
+</html>
+

@@ -1,0 +1,131 @@
+/*================THIS STYLESHEET CAN BE OVERWRITTEN TO MATCH THE DESIRED FINAL STYLES================*/
+/*IMPORTANT: If CSS styles are going to be changed, be aware there are UI classes being toggled 
+on/off on the validation script. Make sure to change the respective class names in 'form_validation.js' as well*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* meyerweb reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*base styles*/
+html{
+	font-size: 62.5%;
+}
+body {
+	font-family: Lato, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	color: #555459;
+}
+h1{
+	font-size: 3.5rem;
+	letter-spacing: .1rem;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+h1#page_title{
+	text-transform: uppercase;
+}
+p{
+	font-size: 2.2rem;
+	letter-spacing: .1rem;
+	margin-bottom: 20px;
+	text-align: center;
+}
+form{
+	width: 600px;
+	margin: 0 auto;
+}
+input,
+select {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 15px;
+	border: 1px solid #C3C3C3;
+	border-radius: 5px;
+	font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: .15rem;
+  color: #A8A8A8;
+}
+select{
+	padding: 0;
+	height: 55px;
+	text-indent: 5px;
+}
+input[type="submit"]{
+	text-transform: uppercase;
+	background: #428BCA;
+	letter-spacing: .3rem;
+	color: #F4F4F4;
+	transition: background .3s ease;
+}
+input[type="submit"]:hover{
+	cursor: pointer;
+	background: #3E83BF;
+}
+input[type="submit"]:disabled{
+	background: #A5A5A5;
+	cursor: default;
+}
+p.inactive{
+	display: none;
+}
+p.display_validation_feedback{
+	display: block;
+	font-size: 1.5em;
+	color: #D9534F;
+	text-align: left;
+}
+.warning_border{
+	border-color: #D9534F;
+}
